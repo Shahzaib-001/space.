@@ -1,0 +1,107 @@
+body{
+    background-image: url(images/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: cover;
+    font-family: 'Public Sans' , sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: .5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0rem;
+}
+.logo{
+    margin: 2rem;
+}
+.navigation{
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    background: hsl(0, 0%, 100% / 0.1);
+    backdrop-filter: blur(1rem) ;
+    width: 650px;
+    padding: 2.1875rem;
+}
+.navigation li{
+    display: inline-block;
+}
+.navigation li a{
+   position: relative;
+   margin-inline-end: 2rem;
+   color: rgb(141, 138, 138);
+   text-decoration: none;
+   font-size: .875rem;
+   margin-left: .375rem;
+}
+.navigation li a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.875rem;
+    width: 0rem;
+    height: .25rem;
+    background: rgb(255, 255, 255);
+    transition: all .5s;
+}
+.navigation li a:hover::after{
+    width: 100%;
+}
+hr{
+    z-index: 1;
+    border: 1px solid gray;
+    width: 500px;
+    margin-left: 90px;
+    margin-bottom: 0rem;
+
+}
+section{
+   display: grid;
+   grid-template-rows: 6.25rem 1fr 1fr ;
+   margin-top: 20%;
+}
+.first{
+    margin-left: 10rem;
+    color: white;
+    font-size: 8.125rem;
+    margin-top: .625rem;
+    margin-bottom: 0rem;
+}
+.first-2{
+    margin-left: 10rem;
+    margin-bottom: 0rem;
+    color: gray;
+}
+.first-3{
+    width: 31.25rem;
+    margin-left: 10rem;
+    color: gray;
+    font-size: .875rem;
+}
+.btn-ex{
+    position: fixed;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    display: grid;
+    grid-template-rows: 6.25rem 1fr 1fr;
+}
+.btn-explore{
+    border: none;
+    border-radius: 18.75rem;
+    width: 15.625rem;
+    height: 15.625rem;
+    margin-left: 53.125rem;
+    font-size: 1.5625rem;
+    transition: background-color 0.15s;
+}
+.btn-explore:hover{
+    background-color: rgb(194, 194, 194);
+    opacity: 1;
+}
